@@ -14,5 +14,5 @@ function handleTyping(event) {
         myString[i] = myString[i].charAt(0).toUpperCase() + myString[i].slice(1);
     }
 
-    document.querySelector('#changeme').innerText = myString.join(' ')
+    document.querySelector('#output').innerText = myString.join(' ')
 }

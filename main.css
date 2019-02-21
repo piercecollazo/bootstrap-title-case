@@ -1,8 +1,39 @@
+.container{
+    background-color: skyblue;
+    height:100vh;
+}
+
+.headBar{
+    background-color: rgb(16, 88, 112);
+}
+
 .heading {
     font-weight: bold;
     font-size: 2em;
 }
 
-#changeme {
-    color: green;
+.content{
+    justify-content: center;
+}
+
+.appBox{
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    border: 2px solid black;
+}
+
+#output {
+    color: rgb(0, 0, 0);
+}
+
+.footBar{
+    background-color: rgb(16, 88, 112)
+    /* position: relative;
+    top:10vh; */
+}
+
+.footer{
+    text-align: center;
 }
