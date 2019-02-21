@@ -1,6 +1,10 @@
-.container{
+.main{
     background-color: skyblue;
     height:100vh;
+}
+
+.title{
+    align-self:center;
 }
 
 .headBar{
@@ -14,14 +18,15 @@
 
 .content{
     justify-content: center;
+    height:40%;
 }
 
 .appBox{
     background-color: coral;
     display: flex;
     flex-direction: column;
-    flex-flow: wrap;
     border: 2px solid black;
+
 }
 
 #output {
@@ -29,11 +34,24 @@
 }
 
 .footBar{
-    background-color: rgb(16, 88, 112)
+    background-color: rgb(16, 88, 112);
     /* position: relative;
     top:10vh; */
 }
 
 .footer{
     text-align: center;
+}
+
+@media screen and (min-width:450px){
+    .appBox{
+        position: relative;
+        top:10vh;
+    }
+}
+
+@media screen and (max-width:396px){
+    .footer{
+        display:none;
+    }
 }
