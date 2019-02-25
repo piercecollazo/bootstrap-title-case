@@ -20,6 +20,7 @@ button{
     background-color: rgb(16, 88, 112);
     border-color:black;
     border-radius: 15px;
+    border-width:1px;
     border-top-width: 0px;
     border-bottom-width: 0px;
 }
