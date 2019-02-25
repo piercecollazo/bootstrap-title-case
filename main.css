@@ -29,6 +29,12 @@
 
 }
 
+#output2{
+    font-family:"wingdings";
+    color:black;
+
+}
+
 #output {
     color: rgb(0, 0, 0);
 }

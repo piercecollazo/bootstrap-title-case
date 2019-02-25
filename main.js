@@ -3,6 +3,9 @@ window.onload = init;
 function init() {
     document.querySelector('#input')
         .addEventListener('keyup', handleTyping);
+
+        document.querySelector('#input2')
+        .addEventListener('keyup', wingDinger);
 }
 
 function handleTyping(event) {
@@ -15,4 +18,11 @@ function handleTyping(event) {
     }
 
     document.querySelector('#output').innerText = myString.join(' ')
+}
+
+function wingDinger(event){
+    let coolInput = event.target.value.toString();
+    let answer = coolInput
+
+    document.querySelector('#output2').innerText = answer;
 }
