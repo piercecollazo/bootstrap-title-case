@@ -78,7 +78,7 @@ button:hover{
     }
 }
 
-@media screen and (max-width:396px){
+@media screen and (max-width:430px){
     .footer{
         display:none;
     }
