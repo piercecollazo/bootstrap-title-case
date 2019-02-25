@@ -7,8 +7,30 @@
     align-self:center;
 }
 
+.topSpace{
+    background-image: linear-gradient(to bottom right, rgb(94, 184, 219), lightblue, rgb(106, 106, 240));
+}
+
 .headBar{
+    justify-content: space-around;
     background-color: rgb(16, 88, 112);
+}
+
+button{
+    background-color: rgb(16, 88, 112);
+    border-color:black;
+    border-radius: 15px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+
+button:hover{
+    background-color:skyblue;
+}
+
+.material-icons{
+    position: relative;
+    top:.7vh;
 }
 
 .heading {
@@ -58,6 +80,12 @@
 
 @media screen and (max-width:396px){
     .footer{
+        display:none;
+    }
+}
+
+@media screen and (max-width:540px){
+    .buttonText{
         display:none;
     }
 }
