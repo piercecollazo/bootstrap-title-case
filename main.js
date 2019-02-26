@@ -1,13 +1,13 @@
 window.onload = init;
 
 function init() {
-    document.querySelector('#input')
+    document.querySelector('#titleIn')
         .addEventListener('keyup', handleTyping);
 
-        document.querySelector('#input2')
+        document.querySelector('#wingIn')
         .addEventListener('keyup', wingDinger);
 
-        document.querySelector('#input3')
+        document.querySelector('#reverseIn')
         .addEventListener('keyup', reverser);
 }
 
@@ -28,21 +28,21 @@ function handleTyping(event) {
     let result = '';
     let i = 0;
     while(i < myString.length){
-        if(i === 0 || myString[i-1] === ' '){
-        result += myString[i].toUpperCase();
+        if(i === 0 || myString[i - 1] === ' '){
+            result += myString[i].toUpperCase();
         } else {
-        result += myString[i];
+            result += myString[i];
         }
         i++
     }
-    document.querySelector('#output').innerText = result;
+    document.querySelector('#titleOut').innerText = result;
 }
 
 function wingDinger(event){
     let coolInput = event.target.value.toString();
     let answer = coolInput;
 
-    document.querySelector('#output2').innerText = answer;
+    document.querySelector('#wingOut').innerText = answer;
 }
 
 function reverser(event){
@@ -55,5 +55,5 @@ function reverser(event){
         i--;
     }
 
-    document.querySelector('#output3').innerText = result;
+    document.querySelector('#reverseOut').innerText = result;
 }
