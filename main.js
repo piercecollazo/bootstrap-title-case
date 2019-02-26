@@ -9,6 +9,9 @@ function init() {
 
         document.querySelector('#reverseIn')
         .addEventListener('keyup', reverser);
+
+        document.querySelector('#emojiIn')
+        .addEventListener('keyup', randomEmoji)
 }
 
 // function handleTyping(event) {
@@ -56,4 +59,20 @@ function reverser(event){
     }
 
     document.querySelector('#reverseOut').innerText = result;
+}
+
+function randomEmoji(event){
+    let userInput = event.target.value.toString();
+    let i = userInput.length - 1;
+    let answer = '';
+    let emoji = [':) ', 'B)', ':P ', ':/ ', ':( ', ':3 '];
+
+    while(i > 0){
+        if(userInput[i] === ' ' || userInput[i] === userInput[0]){
+            let random = Math.floor(Math.random() * 5);
+            answer += emoji[random];
+        }
+        i--;
+    }
+    document.querySelector('#emojiOut').innerText = answer;
 }

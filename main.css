@@ -42,6 +42,7 @@ button:hover{
 
 .content{
     justify-content: center;
+    flex-flow:wrap;
     height:40%;
 }
 

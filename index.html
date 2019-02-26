@@ -24,7 +24,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container main">
+    <div class="container-fluid main">
         <div class="topSpace row">
             <div class="image col"><img src="./vermin.jpeg"></div>
             <div class="heading title col">String Wizardry!</div>
@@ -66,10 +66,18 @@
                     <div id="reverseOut"></div>
             </div>
 
+            <div class="appBox col-md-4">
+                    <div class="heading">Type in here:</div>
+                    <form id="reverse-input">
+                        <input type="text" id="emojiIn">
+                    </form>
+                    <div class="heading">Get emojis here!:</div>
+                    <div id="emojiOut"></div>
+            </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="footBar row">
             <div class="footer col">Alex Collazo 2019</div>
         </div>
