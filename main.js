@@ -6,6 +6,9 @@ function init() {
 
         document.querySelector('#input2')
         .addEventListener('keyup', wingDinger);
+
+        document.querySelector('#input3')
+        .addEventListener('keyup', reverser);
 }
 
 // function handleTyping(event) {
@@ -40,4 +43,17 @@ function wingDinger(event){
     let answer = coolInput;
 
     document.querySelector('#output2').innerText = answer;
+}
+
+function reverser(event){
+    let userInput = event.target.value.toString();
+    let result = '';
+    let i = userInput.length - 1;
+
+    while(i >= 0){
+        result += userInput[i];
+        i--;
+    }
+
+    document.querySelector('#output3').innerText = result;
 }
