@@ -8,21 +8,36 @@ function init() {
         .addEventListener('keyup', wingDinger);
 }
 
+// function handleTyping(event) {
+//     let userInput = event.target.value.toString();
+//     let myString = userInput.toLowerCase().split(' ');
+
+//     for(let i = 0; i < myString.length; i++){
+//         myString[i] = myString[i][0].toUpperCase() + myString[i].slice(1);
+//     }
+
+//     document.querySelector('#output').innerText = myString.join(' ')
+// }
+
 function handleTyping(event) {
     let userInput = event.target.value.toString();
-    // let answer = userInput;
-    let myString = userInput.toLowerCase().split(' ');
-
-    for(let i = 0; i < myString.length; i++){
-        myString[i] = myString[i].charAt(0).toUpperCase() + myString[i].slice(1);
+    let myString = userInput.toLowerCase();
+    let result = '';
+    let i = 0;
+    while(i < myString.length){
+        if(i === 0 || myString[i-1] === ' '){
+        result += myString[i].toUpperCase();
+        } else {
+        result += myString[i];
+        }
+        i++
     }
-
-    document.querySelector('#output').innerText = myString.join(' ')
+    document.querySelector('#output').innerText = result;
 }
 
 function wingDinger(event){
     let coolInput = event.target.value.toString();
-    let answer = coolInput
+    let answer = coolInput;
 
     document.querySelector('#output2').innerText = answer;
 }
